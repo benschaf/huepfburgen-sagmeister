@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Hüpfburgen Sagmeister - Hüpfburgen für jeden Anlass</title>
+    <meta name="description"
+        content="Hüpfburgen Sagmeister bietet eine große Auswahl an Hüpfburgen für jeden Anlass. Ob Kindergeburtstag, Firmenfeier oder Hochzeit - bei uns finden Sie die passende Hüpfburg.">
+    <script src="https://kit.fontawesome.com/8f0b8db894.js" crossorigin="anonymous"></script>
+    <style>
+        .accent-orange {
+            color: #ff562f;
+        }
+
+        .accent-green {
+            color: #10b981;
+        }
+
+        .accent-orange-bg {
+            background-color: #ff562f;
+        }
+
+        .secondary-text {
+            color: #6b7280;
+            /* Tailwind's gray-500 */
+        }
+
+        .bold-font {
+            font-weight: 700;
+        }
+
+        .main-cta {
+            background-color: #ff562f;
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .main-cta:hover {
+            background-color: #e04e2b;
+        }
+
+        .card-cta {
+            background-color: #ff562f;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .card-cta:hover {
+            background-color: #e04e2b;
+        }
+    </style>
+</head>
+
+<body class="text-gray-900 min-h-screen flex flex-col">
+    <div class="accent-orange-bg text-white text-center py-2">
+        <div class="flex justify-between items-center px-4">
+            <div class="flex space-x-4">
+                <p><i class="fas fa-check"></i> Sofort verfügbar</p>
+                <p><i class="fas fa-check"></i> Lieferung oder Abholung</p>
+                <p><i class="fas fa-check"></i> Versicherung inbegriffen</p>
+            </div>
+            <p class="font-bold">Tel: 01234 567890</p>
+        </div>
+    </div>
+    <header class="w-full z-10 bg-white shadow-md">
+        <nav class="container mx-auto p-8 flex justify-between items-center" aria-label="Main Navigation">
+            <h1>
+                <a href="#" class="font-bold text-2xl accent-orange">Hüpfburgen Sagmeister</a>
+            </h1>
+            <div class="sm:hidden"></div>
+                <button id="menu-button" class="text-gray-700 focus:outline-none md:hidden">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <div id="menu" class="hidden md:flex md:items-center md:space-x-8">
+                <ul class="flex flex-col md:flex-row md:space-x-8">
+                    <li><a href="#contact" class="hover:underline text-lg font-semibold text-gray-700 hover:text-orange-600 transition-colors duration-300"><i class="fas fa-envelope"></i> Kontakt</a></li>
+                    <li><a href="#about" class="hover:underline text-lg font-semibold text-gray-700 hover:text-orange-600 transition-colors duration-300"><i class="fas fa-info-circle"></i> Über uns</a></li>
+                    <li>
+                        <a href="#jetzt-buchen" class="main-cta"><i class="fas fa-book"></i> Jetzt buchen</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function () {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+    <main class="container mx-auto p-4 flex-grow pt-16">
+        <section
+            class="hero flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8 px-8">
+            <div class="flex flex-col items-center space-y-8">
+                <p class="text-4xl secondary-text bold-font text-white text-center md:text-left">Die besten Hüpfburgen
+                    für <span class="accent-orange">jeden Anlass</span></p>
+                <a href="#contact" class="main-cta mb-8"><i class="fas fa-envelope"></i> Kontaktieren Sie uns jetzt für
+                    Ihre Hüpfburg!</a>
+            </div>
+            <div>
+                <img src="src/img/caique-nascimento-kUY6bln4Les-unsplash (1).jpg" alt="Hüpfburgen"
+                    class="rounded-lg shadow-lg w-full max-w-md">
+            </div>
+        </section>
+        <section id="huepfburgen" class="my-8">
+            <h2 class="text-3xl font-semibold mb-4 accent-orange"><i class="fas fa-castle"></i> Unsere Hüpfburgen</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <article class="p-4 shadow-md bg-gray-50 rounded-lg flex flex-col justify-between gap-8">
+<div>
+                    <div class="relative">
+                        <img src="src/img/bouncy-castle-3587770_1280.png" alt="Hüpfburg Regenbogen"
+                            class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <h3 class="text-2xl font-semibold mt-4">Hüpfburg Regenbogen</h3>
+                    <p class="mt-2">Die Hüpfburg Regenbogen ist ideal für Kindergeburtstage und kleinere
+                        Veranstaltungen. Sie hat
+                        eine Größe
+                        von 3x3 Metern und bietet Platz für bis zu 6 Kinder.</p>
+</div>
+                    <div class="text-center mt-4 self-end">
+                        <a href="#contact" class="card-cta"><i class="fas fa-bounce"></i> Jetzt Hüpfburg Regenbogen
+                            mieten</a>
+                    </div>
+                </article>
+                <article class="p-4 shadow-md bg-gray-50 rounded-lg flex flex-col justify-between gap-8">
+<div>
+                    <div class="relative flex items-center justify-center">
+                        <img src="src/img/bounce-castle-8818468_1280.jpg" alt="Hüpfburg Abenteuer"
+                            class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <h3 class="text-2xl font-semibold mt-4">Hüpfburg Abenteuer</h3>
+                    <p class="mt-2">Die Hüpfburg Abenteuer ist perfekt für größere Veranstaltungen wie Firmenfeiern oder
+                        Hochzeiten. Sie hat
+                        eine Größe von 5x5 Metern und bietet Platz für bis zu 12 Kinder.</p>
+</div>
+                    <div class="text-center mt-4 self-end">
+                        <a href="#contact" class="card-cta"><i class="fas fa-bounce"></i> Jetzt Hüpfburg Abenteuer
+                            mieten</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="features" class="my-8">
+            <h2 class="text-3xl font-semibold mb-4 accent-orange">Unsere Leistungen</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-4 rounded-lg shadow-md bg-gray-50 text-center">
+                    <i class="fas fa-check-circle text-4xl accent-green mb-4"></i>
+                    <h3 class="text-2xl font-semibold mt-4 accent-orange">Hüpfburg mit allem Zubehör</h3>
+                    <p class="mt-2">Unsere Hüpfburgen kommen mit allem notwendigen Zubehör, damit Sie sich um nichts
+                        kümmern müssen.</p>
+                </div>
+                <div class="p-4 rounded-lg shadow-md bg-gray-50 text-center">
+                    <i class="fas fa-check-circle text-4xl accent-green mb-4"></i>
+                    <h3 class="text-2xl font-semibold mt-4 accent-orange">Passender Anhänger kann mitgemietet werden
+                    </h3>
+                    <p class="mt-2">Mieten Sie einen passenden Anhänger, um die Hüpfburg bequem zu transportieren.</p>
+                </div>
+                <div class="p-4 rounded-lg shadow-md bg-gray-50 text-center">
+                    <i class="fas fa-check-circle text-4xl accent-green mb-4"></i>
+                    <h3 class="text-2xl font-semibold mt-4 accent-orange">Lieferung und Aufbauservice auf Anfrage</h3>
+                    <p class="mt-2">Auf Anfrage bieten wir auch Lieferung und Aufbauservice an, damit Sie sich
+                        entspannen können.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="my-8">
+            <h2 class="text-3xl font-semibold mb-4 accent-orange"><i class="fas fa-envelope"></i> Kontaktieren Sie uns
+            </h2>
+            <form action="#" method="POST" class="bg-white p-6 rounded-lg shadow-md">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700">Name</label>
+                    <input type="text" id="name" name="name"
+                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-600"
+                        required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">E-Mail</label>
+                    <input type="email" id="email" name="email"
+                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-600"
+                        required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700">Nachricht</label>
+                    <textarea id="message" name="message" rows="4"
+                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-600"
+                        required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit"
+                        class="accent-orange-bg text-white px-6 py-3 rounded-lg shadow-lg hover:bg-orange-700"><i
+                            class="fas fa-paper-plane"></i> Nachricht senden</button>
+                </div>
+            </form>
+        </section>
+        <section id="about" class="my-8">
+            <h2 class="text-3xl font-semibold mb-4 accent-orange"><i class="fas fa-info-circle"></i> Über uns</h2>
+            <p class="text-lg secondary-text">Hüpfburgen Sagmeister ist ein Familienbetrieb, der sich auf die Vermietung
+                von Hüpfburgen für jeden Anlass spezialisiert hat. Wir bieten eine große Auswahl an Hüpfburgen, die
+                perfekt für Kindergeburtstage, Firmenfeiern, Hochzeiten und andere Veranstaltungen geeignet sind. Unser
+                Ziel ist es, Ihnen den bestmöglichen Service zu bieten und sicherzustellen, dass Ihre Veranstaltung ein
+                voller Erfolg wird.</p>
+        </section>
+    </main>
+    <footer class="text-gray-700 bg-gray-200">
+        <div class="container mx-auto p-4">
+            <ul class="flex space-x-4">
+                <li><a href="#" class="hover:underline">Impressum</a></li>
+                <li><a href="#" class="hover:underline">Datenschutz</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
